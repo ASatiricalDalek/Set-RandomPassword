@@ -1,46 +1,5 @@
 <#
     .SYNOPSIS 
-    Sets admin password for the script
-
-    .DESCRIPTION
-    Sets the admin password for the script to use in resetting the users's password
-#>
-function Set-OSCredential
-{
-    param
-    (
-        $username
-    )
-
-    write-host "Enter your A account credentials"
-    # Allow the user to provide their username but if they don't just use the full get-credential dialog
-    if ($username)
-    {
-        $script:Cred = Get-Credential -UserName $username
-    }
-    else 
-    {
-        $script:Cred = Get-Credential   
-    }
-}
-
-<#
-    .SYNOPSIS 
-    Verifies a user has initialized the module with their admin credentials
-
-    .DESCRIPTION
-    Checks to see if the $cred variable has been set for this instance of the module. If it hasn't, run the set-oscredential function to get it
-#>
-function Test-OSCredentials
-{
-    if ($null -eq $Cred)
-    {
-        Set-OSCredential
-    }
-}
-
-<#
-    .SYNOPSIS 
     Generates a random password
 
     .DESCRIPTION
@@ -102,15 +61,3 @@ function Get-RandomPassword
 
     return $randomPW
 }
-
-function Set-RandomPassword 
-{
-    param 
-    (
-        $User,
-        [securestring]$Password    
-    )
-    Test-OSCredentials
-    Set-ADAccountPassword -Identity $User -NewPassword $Password -Credential $cred
-}
-
