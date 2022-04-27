@@ -32,7 +32,7 @@ function Get-RandomPassword
         'Dog', 'Cat', 'Walrus', 'Shark', 'Apple', 'Wonder', 'Glue', 'Castle', 'Spider', 'Hornet', 'Rose', 'Candy', 'Seashell', 'Rabbit', 'Pink', 'Red', 'Orange', 'Yellow', 'Blue', 'Purple', 
         'Cyan', 'Change', 'Control', 'Security', 'Maximum', 'Rhino', 'Harry', 'Alpaca', 'Alps', 'Michigan', 'Oak', 'Park', 'Network', 'Education', 'Electricty', 'Harbor', 'Town', 'Alien', 
         'Deleted', 'Ticket', 'River', 'Mountain', 'Canyon', 'Rapid', 'Rustic', 'Vintage', 'Modern', 'Score', 'Waiter', 'Somber', 'Operation', 'Excited', 'Random', 'Begin', 'Watch', 'Phone',
-        'Disc', 'Dino', 'Zoom', 'Speed', 'Grace', 'Bonfire', 'Raptor', 'Gound', 'Dock', 'Monitor', 'Keyboard', 'Watch', 'Listen', 'Look', 'Ocean', 'Climate', 'Variation', 'Weather'
+        'Disc', 'Dino', 'Zoom', 'Speed', 'Grace', 'Bonfire', 'Raptor', 'Ground', 'Dock', 'Monitor', 'Keyboard', 'Watch', 'Listen', 'Look', 'Ocean', 'Climate', 'Variation', 'Weather'
     )
     $randomPW = $null
     $loopControl = 1

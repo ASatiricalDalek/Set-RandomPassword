@@ -10,6 +10,9 @@ $OPPA = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\OPPA.csv"
 $PES = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\PES.csv"
 $TEST = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\Test.csv"
 
+# Run with service account
+# How to obscure password? 
+
 $Cred = Get-Credential "amcnamarac"
 
 
