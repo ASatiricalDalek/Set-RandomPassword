@@ -1,20 +1,14 @@
-Import-Module "G:\My Drive\PSScripts\Set-RandomPassword\Get-RandomPassword.psm1"
+Import-Module ".\Get-RandomPassword.psm1"
 
 # File locations for sub account CSVs
-$EES = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\EES.csv"
-$KES = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\KES.csv"
-$LES = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\LES.csv"
-$NOVA = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\NOVA.csv"
-$OPHS = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\OPHS.csv"
-$OPPA = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\OPPA.csv"
-$PES = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\PES.csv"
-$TEST = "G:\My Drive\PSScripts\Set-RandomPassword\Accounts\Test.csv"
-
-# Run with service account
-# How to obscure password? 
-
-$Cred = Get-Credential "amcnamarac"
-
+$EES = "\\OakShares\SubAccounts\Einstein\EES.csv"
+$KES = "\\OakShares\SubAccounts\Key\KES.csv"
+$LES = "\\OakShares\SubAccounts\Lessenger\LES.csv"
+$NOVA = "\\OakShares\SubAccounts\NOVA\NOVA.csv"
+$OPHS = "\\OakShares\SubAccounts\OPHS\OPHS.csv"
+$OPPA = "\\OakShares\SubAccounts\OPPA\OPPA.csv"
+$PES = "\\OakShares\SubAccounts\Pepper\PES.csv"
+$TEST = "\\OakShares\SubAccounts\Test\Test.csv"
 
 function Set-SubAccountPassword
 {
@@ -44,3 +38,10 @@ function Set-SubAccountPassword
 }
 
 Set-SubAccountPassword -CSVLocation $TEST
+# Set-SubAccountPassword -CSVLocation $EES
+# Set-SubAccountPassword -CSVLocation $KES
+# Set-SubAccountPassword -CSVLocation $LES
+# Set-SubAccountPassword -CSVLocation $NOVA
+# Set-SubAccountPassword -CSVLocation $OPHS
+# Set-SubAccountPassword -CSVLocation $OPPA
+# Set-SubAccountPassword -CSVLocation $PES
