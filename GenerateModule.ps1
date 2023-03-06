@@ -8,4 +8,3 @@ New-ModuleManifest `
 -Description "Functions for random setting and recording of AD Account passwords for temporary generic accounts (and other password related utilities)" `
 -PowerShellVersion "7.1" `
 -FunctionsToExport @('Get-OSRandomPassword', 'Set-OSSubAccountPassword') `
--RequiredModules "ActiveDirectory"
