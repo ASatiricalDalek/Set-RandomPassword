@@ -38,10 +38,10 @@ function Set-SubAccountPassword
 }
 
 Set-SubAccountPassword -CSVLocation $TEST
-# Set-SubAccountPassword -CSVLocation $EES
-# Set-SubAccountPassword -CSVLocation $KES
-# Set-SubAccountPassword -CSVLocation $LES
-# Set-SubAccountPassword -CSVLocation $NOVA
-# Set-SubAccountPassword -CSVLocation $OPHS
-# Set-SubAccountPassword -CSVLocation $OPPA
-# Set-SubAccountPassword -CSVLocation $PES
+Set-SubAccountPassword -CSVLocation $EES
+Set-SubAccountPassword -CSVLocation $KES
+Set-SubAccountPassword -CSVLocation $LES
+Set-SubAccountPassword -CSVLocation $NOVA
+Set-SubAccountPassword -CSVLocation $OPHS
+Set-SubAccountPassword -CSVLocation $OPPA
+Set-SubAccountPassword -CSVLocation $PES
