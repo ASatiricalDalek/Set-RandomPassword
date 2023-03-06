@@ -29,7 +29,7 @@ function Set-OSSubAccountPassword
     {
         $upn = $account.Login
         $ADAccount = Get-ADUser -Filter "userPrincipalName -like '$upn'"
-        $NewPass = Get-RandomPassword
+        $NewPass = Get-OSRandomPassword
         if ($Credential) 
         {
             try 
@@ -38,7 +38,8 @@ function Set-OSSubAccountPassword
             }
             catch 
             {
-                Out-Default -InputObject "Unable to change password on $upn `n $error[0]" 
+                Out-Default -InputObject "Unable to change password on $upn" 
+                Out-Default -InputObject $error[0]
                 break
             }
         }
@@ -50,7 +51,8 @@ function Set-OSSubAccountPassword
             }
             catch
             {
-                Out-Default -InputObject "Unable to change password on $upn `n $error[0]" 
+                Out-Default -InputObject "Unable to change password on $upn" 
+                Out-Default -InputObject $error[0]
                 break
             }
         }
