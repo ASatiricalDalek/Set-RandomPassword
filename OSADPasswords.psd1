@@ -18,7 +18,7 @@ ModuleVersion = '2.0'
 # CompatiblePSEditions = @()
 
 # ID used to uniquely identify this module
-GUID = '89cca66b-b9b5-4957-afcd-82e13ad747ad'
+GUID = '6b17d459-a7a0-4654-95ad-b2f5679c8488'
 
 # Author of this module
 Author = 'Connor McNamara'
@@ -51,7 +51,7 @@ PowerShellVersion = '7.1'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @('ActiveDirectory')
+# RequiredModules = @()
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
