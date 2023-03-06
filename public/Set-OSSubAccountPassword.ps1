@@ -11,7 +11,7 @@
     .PARAMETER 
 
 #>
-function Set-SubAccountPassword
+function Set-OSSubAccountPassword
 {
     param
     (

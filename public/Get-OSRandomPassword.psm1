@@ -14,7 +14,7 @@
     .PARAMETER MinimumPasswordLength
     Sets the minimum length of the password, will override number of phrases if the password is too short
 #>
-function Get-RandomPassword
+function Get-OSRandomPassword
 {
     param (
         [Parameter()]
